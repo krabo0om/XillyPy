@@ -4,6 +4,8 @@ import time
 
 import xillypy
 
+__author__ = 'Paul Genssler'
+
 read_device = '/dev/xillybus_read'
 write_device = '/dev/xillybus_write'
 

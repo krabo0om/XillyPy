@@ -1,8 +1,7 @@
 import array
 import struct
-from io import FileIO, BufferedWriter
 
-__author__ = 'pgenssler'
+__author__ = 'Paul Genssler'
 
 
 def memory_read(dev_file: str, address: int, length=1) -> tuple:
@@ -32,15 +31,15 @@ def memory_write(dev_file: str, address: int, data: tuple):
         mem.write(struct.pack('B' * len(data), *data))
 
 
-def stream_write(dev_file: str, data: bytes) -> int:
+def stream_write(dev_file: str, data) -> int:
     """
     stream data into the device
     @param dev_file: the target device
-    @param data: data to write, bytes object
+    @param data: data to write, iterable and slicable container (like a list) with bytes objects
     @return: how many bytes were written
     @rtype: int
     """
-    with BufferedWriter(FileIO(dev_file, 'wb')) as fifo:
+    with open(dev_file, 'wb') as fifo:
         wrote = 0
         data_len = len(data)
         while data_len > wrote:
