@@ -1,5 +1,5 @@
-XillyPy |PyPi|
-==============
+XillyPy |PyPi| |License|
+=========================
 
 A simple Xillybus interface written in Python.
 It supports streaming as well as reading/writing bytes to an address/data interface.
@@ -23,5 +23,8 @@ Compatibility
 The code was tested with Python 3.5 and 3.6 on a Linux Host (Ubuntu 16.04).
 
 
-.. |PyPi| image:: https://badge.fury.io/py/xillypy.svg
-    :target: https://badge.fury.io/py/xillypy
+.. |PyPi| image:: https://img.shields.io/pypi/v/xillypy.svg
+    :target: https://pypi.python.org/pypi/xillypy/
+
+.. |License| image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://raw.githubusercontent.com/krabo0om/XillyPy/master/LICENSE
