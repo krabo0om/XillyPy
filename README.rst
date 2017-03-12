@@ -1,5 +1,7 @@
 XillyPy
-=======
+==============
+.. image:: https://badge.fury.io/py/xillypy.svg
+    :target: https://badge.fury.io/py/xillypy
 A simple Xillybus interface written in Python.
 It supports streaming as well as reading/writing bytes to an address/data interface.
 
